@@ -26,7 +26,7 @@
     width: 100%;
     background-color: #2D2D2D;
     border-radius: 5px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,21 +41,16 @@
     margin: 0;
     background-color: #2D2D2D;
     color: white;
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -10px;
     z-index: 0;
     transition: all 0.2s ease-in-out;
     border-radius: 5px;
-    display: none;
+    display: block;
 }
 
 .project {
     position: relative;
-}
-
-.project:hover p {
-    top: 0;
-    filter: none;
 }
 
 .project h2 {
@@ -74,38 +69,45 @@
     transition: all 0.5s ease-in-out;
 }
 
+@media (min-width: 150px) {
+    #second-section {
+        height: 1400px;
+        min-height: 1400px;
+    }
+}
+
 @media (min-width: 250px) {
     #second-section {
-        height: 840px;
-        min-height: 840px;
+        height: 1440px;
+        min-height: 1440px;
     }
 }
 
 @media (min-width: 280px) {
     #second-section {
-        height: 950px;
-        min-height: 950px;
+        height: 1450px;
+        min-height: 1450px;
     }
 }
 
 @media (min-width: 350px) {
     #second-section {
-        height: 1050px;
-        min-height: 1050px;
+        height: 1550px;
+        min-height: 1550px;
     }
 }
 
 @media (min-width: 400px) {
     #second-section {
-        height: 1150px;
-        min-height: 1150px;
+        height: 1550px;
+        min-height: 1550px;
     }
 }
 
 @media (min-width: 450px) {
     #second-section {
-        height: 1250px;
-        min-height: 1250px;
+        height: 1650px;
+        min-height: 1650px;
     }
 }
 
@@ -123,29 +125,29 @@
     }
 
     #second-section {
-        height: 1275px;
-        min-height: 1275px;
+        height: 1675px;
+        min-height: 1675px;
     }
 }
 
 @media (min-width: 600px) {
     #second-section {
-        height: 1400px;
-        min-height: 1400px;
+        height: 1800px;
+        min-height: 1800px;
     }
 }
 
 @media (min-width: 650px) {
     #second-section {
-        height: 1450px;
-        min-height: 1450px;
+        height: 1850px;
+        min-height: 1850px;
     }
 }
 
 @media (min-width: 700px) {
     #second-section {
-        height: 1600px;
-        min-height: 1600px;
+        height: 2000px;
+        min-height: 2000px;
     }
 }
 
@@ -157,15 +159,15 @@
     }
 
     #second-section {
-        height: 800px;
-        min-height: 800px;
+        height: 1100px;
+        min-height: 1100px;
     }
 }
 
 @media (min-width: 900px) {
     #second-section {
-        height: 900px;
-        min-height: 900px;
+        height: 1200px;
+        min-height: 1200px;
     }
 }
 
@@ -175,8 +177,8 @@
     }
 
     #second-section {
-        height: 1000px;
-        min-height: 1000px;
+        height: 1300px;
+        min-height: 1300px;
     }
 }
 
@@ -185,6 +187,11 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 20px;
+    }
+
+    .project p {
+        position: absolute;
+        top: 0;
     }
 
     .project:hover p {
