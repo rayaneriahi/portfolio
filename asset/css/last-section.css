@@ -160,7 +160,7 @@
     }
 } */
 
-@media (min-height: 700px) and (max-width: 520px) {
+/* @media (min-height: 700px) and (max-width: 520px) {
     #last-section {
         height: 1000px;
         min-height: 0;
@@ -179,5 +179,5 @@
         height: 900px;
         min-height: 0;
     }
-}
+} */
 

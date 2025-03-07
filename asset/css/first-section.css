@@ -3,7 +3,6 @@
     background-color: #212121;
     color: white;
     height: auto;
-    max-height: 700px;
     min-height: 800px;
 }
 
@@ -175,12 +174,12 @@
     }
 }
 
-@media (min-height: 700px) {
+/* @media (min-height: 1100px) {
     #first-section {
-        height: 700px;
+        height: 1100px;
         min-height: 0;
     }
-}
+} */
 
 
 @media (min-height: 700px) and (max-width: 270px) {
